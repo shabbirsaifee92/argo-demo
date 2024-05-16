@@ -11,8 +11,8 @@ spec:
     targetRevision: main
     helm:
       valueFiles:
-        - environments/testing/values.yaml
-        - environments/testing/version.yaml
+        - environments/testing-t1/values.yaml
+        - environments/testing-t1/version.yaml
   destination:
     server: "https://kubernetes.default.svc"
     namespace: myapp
