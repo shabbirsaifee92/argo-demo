@@ -2,17 +2,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-deployment
+  name: anotherapp
 spec:
   replicas: {{ .Values.deployment.replicas }}
   selector:
     matchLabels:
-      app: my-application
+      app: anotherapp
   template:
     metadata:
-      name: my-pod
+      name: anotherapp
       labels:
-        app: my-application
+        app: anotherapp
     spec:
       containers:
         - name: webserver
