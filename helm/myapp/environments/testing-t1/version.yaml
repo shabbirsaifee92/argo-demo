@@ -2,4 +2,4 @@
 deployment:
   image:
     name: nginx
-    tag: x.x.x
+    tag: '1.26.0'
