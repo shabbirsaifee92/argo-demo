@@ -1,6 +1,4 @@
-# app/environments/development/values.yaml
 deployment:
-  replicas: 1
   image:
     repository: shameson0708
     name: redis
