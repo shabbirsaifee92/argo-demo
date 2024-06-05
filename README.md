@@ -1,2 +1,2 @@
 ## Argo control repo demo
-How to promote apps with argo
+How to promote apps with argo manual changes
