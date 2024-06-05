@@ -2,4 +2,4 @@ deployment:
   image:
     repository: shameson0708
     name: redis
-    tag: latest
+    tag: '562821994fbfbb2475d945c21c0956d0a88b82b2'
