@@ -3,4 +3,4 @@ deployment:
   image:
     repository: shameson0708
     name: redis
-    tag: '1.0.3'
+    tag: 'x.x.x'
