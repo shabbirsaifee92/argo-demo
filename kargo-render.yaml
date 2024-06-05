@@ -1,0 +1,13 @@
+configVersion: v1alpha1
+branchConfigs:
+- name: env/staging
+  appConfigs:
+    rxintake:
+      configManagement:
+        path: helm/rxintake
+        helm:
+          releaseName: rxintake
+          namespace: rxintake #optional
+          valueFiles:
+          - environments/pre-prod/values.yaml
+      outputPath: helm/rxintake
