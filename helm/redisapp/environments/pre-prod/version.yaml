@@ -2,4 +2,4 @@ deployment:
   image:
     repository: shameson0708
     name: redis
-    tag: 'fd2cac2d6fa7164e81ba98cb2086d3df56603736'
+    tag: 'x.x.x'
