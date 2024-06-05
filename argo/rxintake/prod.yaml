@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   sources:
-  - repoURL: https://charts.bitnami.com/bitnami
-    chart: redis
-    targetRevision: 19.5.0
+  - repoURL: https://github.com/shabbirsaifee92/argo-demo.git
+    path: helm/rxintake/environments/prod
+    targetRevision: main
     helm:
       valueFiles:
       - $values/helm/redisapp/environments/prod/values.yaml
