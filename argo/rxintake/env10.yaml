@@ -6,15 +6,12 @@ metadata:
 spec:
   project: default
   sources:
-  - repoURL: https://github.com/shameson/argo-demo
+    repoURL: https://github.com/shameson/argo-demo
     path: helm/rxintake/environments/env10
     targetRevision: main
     helm:
       valueFiles:
-      - $values/helm/rxintake/environments/env10/values.yaml
-  - repoURL: https://github.com/shameson/argo-demo
-    targetRevision: main
-    ref: values
+      - helm/rxintake/environments/env10/values.yaml
   destination:
     server: "https://kubernetes.default.svc"
     namespace: rxintake

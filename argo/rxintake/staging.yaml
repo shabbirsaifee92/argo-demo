@@ -5,16 +5,13 @@ metadata:
   namespace: argocd
 spec:
   project: default
-  sources:
-  - repoURL: https://github.com/shameson/argo-demo.git
+  source:
+    repoURL: https://github.com/shameson/argo-demo.git
     path: helm/rxintake/environments/staging
     targetRevision: main
     helm:
       valueFiles:
-      - "$values/helm/rxintake/environments/staging/values.yaml"
-  - repoURL: https://github.com/shameson/argo-demo
-    targetRevision: main
-    ref: values
+      - "values.yaml"
   destination:
     server: "https://kubernetes.default.svc"
     namespace: rxintake
