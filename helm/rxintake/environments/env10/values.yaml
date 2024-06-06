@@ -1,4 +1,8 @@
-image:
-  repository: shameson0708
-  name: redis
-  tag: 'x.x.x'
+redis:
+  image:
+    repository: shameson0708
+    name: redis
+    tag: '1.0.3'
+
+  replica:
+    replicaCount: 1
