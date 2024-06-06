@@ -1,5 +1,6 @@
 deployment:
+  replicas: 1
   image:
     repository: shameson0708
     name: redis
-    tag: '562821994fbfbb2475d945c21c0956d0a88b82b2'
+    tag: 'x.x.x'

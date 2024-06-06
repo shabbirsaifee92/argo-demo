@@ -1,24 +1,23 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: redisapp-integration-1
+  name: rxintake
   namespace: argocd
 spec:
   project: default
   sources:
-  - repoURL: https://charts.bitnami.com/bitnami
-    chart: redis
-    targetRevision: 19.5.0
+  - repoURL: https://github.com/shabbirsaifee92/argo-demo
+    path: helm/rxintake/environments/release
+    targetRevision: main
     helm:
       valueFiles:
-      - $values/helm/redisapp/environments/integration-1/values.yaml
-      - $values/helm/redisapp/environments/integration-1/version.yaml
+      - $values/helm/rxintake/environments/release/values.yaml
   - repoURL: https://github.com/shabbirsaifee92/argo-demo
     targetRevision: main
     ref: values
   destination:
     server: "https://kubernetes.default.svc"
-    namespace: redisapp
+    namespace: rxintake
   syncPolicy:
     automated:
       prune: true

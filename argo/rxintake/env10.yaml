@@ -1,21 +1,23 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myapp-production-west
+  name: rxintake
   namespace: argocd
 spec:
   project: default
-  source:
-    repoURL: https://github.com/shabbirsaifee92/argo-demo
-    path: helm/myapp
+  sources:
+  - repoURL: https://github.com/shabbirsaifee92/argo-demo
+    path: helm/rxintake/environments/env10
     targetRevision: main
     helm:
       valueFiles:
-        - environments/production-west/values.yaml
-        - environments/production-west/version.yaml
+      - $values/helm/rxintake/environments/env10/values.yaml
+  - repoURL: https://github.com/shabbirsaifee92/argo-demo
+    targetRevision: main
+    ref: values
   destination:
     server: "https://kubernetes.default.svc"
-    namespace: myapp
+    namespace: rxintake
   syncPolicy:
     automated:
       prune: true

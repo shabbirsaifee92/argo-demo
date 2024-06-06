@@ -1,0 +1,9 @@
+apiVersion: v2
+name: umbrella-rxintake
+description: A Helm chart for deploying rxintake
+type: application
+version: 1.0.0
+dependencies:
+  - repository: https://charts.bitnami.com/bitnami
+    name: redis
+    version: 19.0.0

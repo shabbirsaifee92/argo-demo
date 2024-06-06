@@ -1,24 +1,23 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: redisapp-pre-prod
+  name: rxintake
   namespace: argocd
 spec:
   project: default
   sources:
-  - repoURL: https://github.com/shabbirsaifee92/argo-demo.git
-    path: helm/rxintake/environments/pre-prod
+  - repoURL: https://github.com/shabbirsaifee92/argo-demo
+    path: helm/rxintake/environments/staging
     targetRevision: main
     helm:
       valueFiles:
-      - $values/helm/redisapp/environments/pre-prod/values.yaml
-      - $values/helm/redisapp/environments/pre-prod/version.yaml
-  - repoURL: https://github.com/shabbirsaifee92/argo-demo.git
+      - $values/helm/rxintake/environments/staging/values.yaml
+  - repoURL: https://github.com/shabbirsaifee92/argo-demo
     targetRevision: main
     ref: values
   destination:
     server: "https://kubernetes.default.svc"
-    namespace: redisapp
+    namespace: rxintake
   syncPolicy:
     automated:
       prune: true

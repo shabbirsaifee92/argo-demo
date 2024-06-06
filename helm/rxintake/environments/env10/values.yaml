@@ -4,4 +4,4 @@ deployment:
   image:
     repository: shameson0708
     name: redis
-    tag: latest
+    tag: x.x.x
