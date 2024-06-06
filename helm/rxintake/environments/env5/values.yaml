@@ -1,4 +1,5 @@
-image:
-  repository: shameson0708
-  name: redis
-  tag: 'x.x.x'
+redis:
+  image:
+    repository: shameson0708
+    name: redis
+    tag: 'x.x.x'

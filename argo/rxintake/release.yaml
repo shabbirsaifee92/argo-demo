@@ -6,13 +6,13 @@ metadata:
 spec:
   project: default
   sources:
-  - repoURL: https://github.com/shabbirsaifee92/argo-demo
+  - repoURL: https://github.com/shameson/argo-demo
     path: helm/rxintake/environments/release
     targetRevision: main
     helm:
       valueFiles:
       - $values/helm/rxintake/environments/release/values.yaml
-  - repoURL: https://github.com/shabbirsaifee92/argo-demo
+  - repoURL: https://github.com/shameson/argo-demo
     targetRevision: main
     ref: values
   destination:
