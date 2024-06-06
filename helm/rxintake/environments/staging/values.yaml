@@ -1,7 +1,6 @@
 redis:
   image:
-    repository: shameson0708
-    name: redis
+    repository: shameson0708/redis
     tag: '1.0.3'
 
   replica:
