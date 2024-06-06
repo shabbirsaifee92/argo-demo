@@ -4,4 +4,4 @@ redis:
     tag: '1.0.3'
 
   replica:
-    replicaCount: 1
+    replicaCount: 2
