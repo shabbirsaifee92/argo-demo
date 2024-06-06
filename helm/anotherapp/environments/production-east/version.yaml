@@ -1,4 +1,0 @@
-deployment:
-  image:
-    name: nginx
-    tag: 1.22.0

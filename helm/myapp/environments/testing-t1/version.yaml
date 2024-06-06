@@ -1,5 +1,0 @@
----
-deployment:
-  image:
-    name: nginx
-    tag: '3.4-rc-slim-bullseye'
