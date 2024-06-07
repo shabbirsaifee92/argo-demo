@@ -4,6 +4,6 @@ description: A Helm chart for deploying rxintake
 type: application
 version: 1.0.0
 dependencies:
-  - repository: oci://registry-1.docker.io/bitnamicharts
-    name: redis
-    version: 19.0.0
+  - name: rxintake
+    repository: oci://kargoacr.azurecr.io/helm
+    version: 1.0.0
