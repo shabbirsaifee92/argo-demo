@@ -4,6 +4,6 @@ description: A Helm chart for deploying rxintake
 type: application
 version: 1.0.0
 dependencies:
-  - name: helm/rxintake
-    repository: oci://kargoacr.azurecr.io
+  - name: rxintake
+    repository: oci://kargoacr.azurecr.io/helm
     version: 1.0.0
